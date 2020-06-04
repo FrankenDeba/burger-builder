@@ -1,0 +1,10 @@
+.container{
+    background-color: #cf8f2e;
+    justify-content: center;
+    display: flex;
+    width:100vw;
+    align-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom:0px;
+}

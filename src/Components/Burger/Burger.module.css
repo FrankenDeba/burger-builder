@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+}
+.burgertop{
+    background: linear-gradient(#bc581e,#e27b36);
+    height:80px;
+    width:40vw;
+    margin-bottom: 10px;
+    border-radius: 50% 50% 2px 2px;
+}
+.burgerbottom{
+    background: linear-gradient(#bc581e,#e27b36);
+    height:50px;
+    width:40vw;
+    margin-top:10px;
+    border-radius: 2px 2px 20px 20px;
+}
+
+

@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content:space-between;
+    flex-basis: 60%;
+}
+.price,.item{
+    border:2px solid darkred;
+    padding: 10px 0px;
+    min-width:100px;
+    border-radius: 50px;
+    color:whitesmoke;
+    font-size: 24px;
+    margin: 10px;
+}
+.addremove{
+    background-color: whitesmoke;
+    padding:10px 30px;
+    border:2px solid steelblue;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 10px;
+}
