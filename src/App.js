@@ -13,26 +13,26 @@ class App extends React.Component{
         width:"100%",
         height:"10px",
         backgroundColor: "brown",
-        margin:"5px"
+        margin:"5px 0 5px 0"
     },
     cheese:{
       width:"100%",
         height:"10px",
         backgroundColor: "yellow",
-        margin:"5px"
+        margin:"5px 0 5px 0"
 
     },
     bacon:{
       width:"100%",
         height:"10px",
         backgroundColor: "red",
-        margin:"5px"
+        margin:"5px 0 5px 0"
     },
     salad:{
       width:"100%",
         height:"10px",
         backgroundColor: "green",
-        margin:"5px"
+        margin:"5px 0 5px 0"
     }
     }
     render(){
