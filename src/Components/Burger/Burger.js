@@ -5,8 +5,8 @@ const Burger = (props) =>{
 let message = ""
     return (
         <div className = {styles.container}>
-        
-           <div className = {styles.burgertop}></div>
+            <div className = {styles.burger}>
+            <div className = {styles.burgertop}></div>
             {
                props.cost===0?(message = "please add ingredients"):null
            }
@@ -24,6 +24,8 @@ let message = ""
                return <div key = {index} style = {props.style.salad}></div>
            })}
            <div className = {styles.burgerbottom}></div>
+            </div>
+           
         </div>
     )
 }

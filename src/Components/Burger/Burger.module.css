@@ -8,19 +8,35 @@
     overflow: auto;
 
 }
+.burger{
+    width:80vw
+}
 .burgertop{
     background: linear-gradient(#bc581e,#e27b36);
-    height:80px;
-    width:40vw;
+    height:40px;
+    width:80vw;
     margin-bottom: 10px;
     border-radius: 50% 50% 2px 2px;
 }
 .burgerbottom{
     background: linear-gradient(#bc581e,#e27b36);
-    height:50px;
-    width:40vw;
+    height:25px;
+    width:80vw;
     margin-top:10px;
     border-radius: 2px 2px 20px 20px;
+}
+@media only screen and (min-width:768px){
+    .burgertop{
+        height: 80px;
+        width:40vw;
+    }
+    .burgerbottom{
+        height: 50px;
+        width:40vw;
+    }
+    .burger{
+        width:40vw;
+    }
 }
 
 

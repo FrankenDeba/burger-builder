@@ -10,26 +10,26 @@ class App extends React.Component{
     
     styles = {
       chicken:{
-        width:"40%",
+        width:"100%",
         height:"10px",
         backgroundColor: "brown",
         margin:"5px"
     },
     cheese:{
-      width:"40%",
+      width:"100%",
         height:"10px",
         backgroundColor: "yellow",
         margin:"5px"
 
     },
     bacon:{
-      width:"40%",
+      width:"100%",
         height:"10px",
         backgroundColor: "red",
         margin:"5px"
     },
     salad:{
-      width:"40%",
+      width:"100%",
         height:"10px",
         backgroundColor: "green",
         margin:"5px"

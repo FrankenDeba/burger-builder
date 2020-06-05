@@ -7,15 +7,25 @@
 }
 .title{
 
-    font-size:36px;
+    font-size:24px;
     color:whitesmoke;
+    max-width:40vw;
 }
 .total{
     border:2px solid darkred;
     border-radius: 10px;
-    padding: 20px;
-    font-size: 36px;
+    padding: 10px;
+    font-size: 24px;
     background-color: white;
     color:darkred;
     margin:20px
+}
+@media only screen and(min-width:768px){
+.title{
+    font-size:36px;
+
+}
+.total{
+    font-size: 36px;
+}
 }
