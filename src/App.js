@@ -5,23 +5,9 @@ import Burger from "./Components/Burger/Burger";
 import Header from "./Components/Header/Header"
 
 class App extends React.Component{
-  constructor(props){
-    super(props);
-    // this.state = {
-    //   ingredients:{
-    //    chicken:[1,1,1],
-    //    cheese:[1,1],
-    //    salad:[1],
-    //    bacon:[1,1]
-    //   }
-  }
+ 
   
-    // {
-    //   this.state.ingredients.map(item =>{
-    //     console.log(item.style);
-        
-    //   })
-    // }
+    
     styles = {
       chicken:{
         width:"40%",
@@ -45,7 +31,7 @@ class App extends React.Component{
     salad:{
       width:"40%",
         height:"10px",
-        backgroundColor: "lightgreen",
+        backgroundColor: "green",
         margin:"5px"
     }
     }

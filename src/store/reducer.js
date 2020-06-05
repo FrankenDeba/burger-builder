@@ -22,6 +22,9 @@ const reducer = (state = initialState,action)=>{
 
     
             console.log(action.payload.name,count);
+            if(count.length > 4){
+                return state
+            }
             
             return ({
                 ...state,

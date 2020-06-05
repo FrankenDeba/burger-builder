@@ -2,13 +2,15 @@ import React from 'react'
 import styles from "./Burger.module.css"
 import {connect} from "react-redux";
 const Burger = (props) =>{
+let message = ""
     return (
         <div className = {styles.container}>
         
            <div className = {styles.burgertop}></div>
-           {/* {props.ingredients.map(item =>{
-               return <div className = {`styles.${item.style}`}>{item.style}</div>
-           })} */}
+            {
+               props.cost===0?(message = "please add ingredients"):null
+           }
+        
            {props.chicken.map((item,index) =>{
                return <div key = {index} style = {props.style.chicken}></div>
            })}
@@ -28,6 +30,7 @@ const Burger = (props) =>{
 
 const mapStateToProps = (state) =>{
     return ({
+        cost:state.cost,
         chicken:state.chicken,
         salad:state.salad,
         bacon:state.bacon,
