@@ -1,11 +1,14 @@
 import { ADD_INGREDIENT, REMOVE_INGREDIENT } from "../action/actionType";
 
 const initialState = {
-    cost:0,
+
+    cost:0
+    ,
+    
         chicken:[],
         bacon:[],
         cheese:[],
-        salad:[]
+        salad:[],
     
     
 }
@@ -14,8 +17,10 @@ const reducer = (state = initialState,action)=>{
     
     switch(action.type){
         case ADD_INGREDIENT:
-            const count = state[action.payload.name].slice()
+            let count = state[action.payload.name].slice()
             count.push(1)
+
+    
             console.log(action.payload.name,count);
             
             return ({
@@ -25,10 +30,22 @@ const reducer = (state = initialState,action)=>{
                 cost:parseInt(state.cost) + parseInt(action.payload.value)
             })
         case REMOVE_INGREDIENT:
+            let cnt = state[action.payload.name].slice()
+            let flag = true
+            if(state[[action.payload.name]].length===0){
+                flag = false
+            }
+            if(cnt.length!==0){
+            cnt.pop()
+            console.log(cnt);
+        
+            
+            }
+            
             if(state.cost===0){
                 return(
                     {
-                    
+                        ...state,
                         cost:0
                     }
                 )
@@ -38,7 +55,11 @@ const reducer = (state = initialState,action)=>{
             
             return({
                 ...state,
-                cost:parseInt(state.cost) - parseInt(action.payload)
+                
+                [action.payload.name]:cnt,
+
+                
+                cost:flag?parseInt(state.cost) - parseInt(action.payload.value):state.cost
             })
         default:
             return state

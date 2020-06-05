@@ -9,17 +9,17 @@ const Burger = (props) =>{
            {/* {props.ingredients.map(item =>{
                return <div className = {`styles.${item.style}`}>{item.style}</div>
            })} */}
-           {props.chicken.map((item) =>{
-               return <div style = {props.style.chicken}></div>
+           {props.chicken.map((item,index) =>{
+               return <div key = {index} style = {props.style.chicken}></div>
            })}
-           {props.cheese.map((item) =>{
-               return <div style = {props.style.cheese}></div>
+           {props.cheese.map((item,index) =>{
+               return <div key = {index} style = {props.style.cheese}></div>
            })}
-           {props.bacon.map((item) =>{
-               return <div style = {props.style.bacon}></div>
+           {props.bacon.map((item,index) =>{
+               return <div key = {index} style = {props.style.bacon}></div>
            })}
-           {props.salad.map((item) =>{
-               return <div style = {props.style.salad}></div>
+           {props.salad.map((item,index) =>{
+               return <div key = {index} style = {props.style.salad}></div>
            })}
            <div className = {styles.burgerbottom}></div>
         </div>

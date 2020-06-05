@@ -7,16 +7,13 @@ import Header from "./Components/Header/Header"
 class App extends React.Component{
   constructor(props){
     super(props);
-    this.state = {
-      ingredients:{
-       chicken:[1,1,1],
-       cheese:[1,1],
-       salad:[1],
-       bacon:[1,1]
-      }
-
-
-  }
+    // this.state = {
+    //   ingredients:{
+    //    chicken:[1,1,1],
+    //    cheese:[1,1],
+    //    salad:[1],
+    //    bacon:[1,1]
+    //   }
   }
   
     // {
@@ -56,7 +53,7 @@ class App extends React.Component{
     return (
       <div className="App">
         <Header/>
-        <Burger style = {this.styles} ingredients = {this.state.ingredients}/>
+        <Burger style = {this.styles}/>
         <Footer/>
       </div>
     );
