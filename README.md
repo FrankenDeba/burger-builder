@@ -1,1 +1,1 @@
-burger-builder1996.firebaseapp.com
+http://burger-builder1996.firebaseapp.com
